@@ -1,0 +1,99 @@
+:root{
+    --imperial-red: #E63946;
+    --honeydew: #F1FAEE;
+    --powder-blue: #A8DADC;
+    --steel-blue: #457B9D;
+    --prussian-blue: #1D3557;
+}
+
+
+/* Setup page */
+div.setup.grid{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1.5fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items:center;
+    justify-items: center;
+    width: 800px;
+    margin: 0 auto 0 auto;
+}
+#p1-heading{
+    grid-column: 1/3;
+}
+#p2-heading{
+    grid-column: 3/5;
+}
+[type="text"]{
+    height: 2em;
+}
+button.setup{
+    margin-top: 50px;
+}
+
+/* Play page */
+div.play.page{
+    /* display:none; */
+    position: absolute;
+    background-color: var(--honeydew);
+    top: 120px;
+    width: 100vw;
+    height: 800px;
+}
+h2.play{
+    display:inline;
+    margin: 20px;
+}
+div.play.area{
+    display:grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    height:606px;
+    width:606px;
+    gap:3px;
+    background-color: var(--steel-blue);
+    margin: 40px auto 0 auto;
+}
+div.play.cell{
+    background-color: var(--honeydew);
+    border: 3px solid var(--honeydew);
+}
+div.play.cell:hover{
+    border-color: var(--imperial-red);
+}
+
+
+
+/* Tags */
+body{
+    background-color: var(--honeydew);
+    text-align: center;
+    margin: 0;
+}
+h1{
+    color: var(--prussian-blue);
+    font: 72px "lobster", cursive;
+    Margin: 24px auto 24px auto;
+}
+h2{
+    color: var(--prussian-blue);
+    font: 24px "Varela Round", sans-serif;
+    font-weight: 700;
+}
+p{
+    color: var(--prussian-blue);
+    font: 18px "Varela Round", sans-serif;
+}
+button{
+    font: 24px "Varela Round", sans-serif;
+    padding: 12px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--honeydew);
+    background-color: var(--steel-blue);
+}
+button:hover{
+    background-color: var(--imperial-red);
+}
+button:focus{
+    outline: thin;
+}

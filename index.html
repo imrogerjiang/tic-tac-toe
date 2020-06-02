@@ -3,10 +3,43 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
-
+    <h1>Tic-Tac-Toe</h1>
+    <div class="setup page">
+        <div class="setup grid">
+            <h2 id="p1-heading">Player 1</h2>
+            <h2 id="p2-heading">Player 2</h2>
+            <p>Name</p>
+            <input id="p1-name" type="text">
+            <p>Name</p>
+            <input id="p2-name" type="text">
+            <p>Marker</p>
+            <input id="p1-marker" type="text" value="X">
+            <p>Marker</p>
+            <input id="p2-marker" type="text" value="O">
+        </div>
+        <button class="setup" type="button">Start</button>
+    </div>
+    <div class="play page">
+        <div class="play players">
+            <h2 class="play">Player 1:</h2><h2 class="play">Player 2:</h2>
+        </div>
+        <div class="play area">
+            <div class="play cell" data-position="0"></div>
+            <div class="play cell" data-position="1"></div>
+            <div class="play cell" data-position="2"></div>
+            <div class="play cell" data-position="3"></div>
+            <div class="play cell" data-position="4"></div>
+            <div class="play cell" data-position="5"></div>
+            <div class="play cell" data-position="6"></div>
+            <div class="play cell" data-position="7"></div>
+            <div class="play cell" data-position="8"></div>
+        </div>
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 
