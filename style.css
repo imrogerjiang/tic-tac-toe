@@ -73,10 +73,13 @@ div.play.cell.played{
 div.play.cell.played:hover{
     border-color: var(--honeydew);
 }
-p.play.cell.text{
+p.play.cell{
     font: bold 96px "lobster", cursive;
     color: var(--prussian-blue);
     margin: auto;
+}
+p.play.cell.win{
+    color: green;
 }
 
 button.play.reset{
