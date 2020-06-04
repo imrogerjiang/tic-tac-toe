@@ -11,8 +11,8 @@
     <h1>Tic-Tac-Toe</h1>
     <div class="setup page">
         <div class="setup grid">
-            <h2 id="p1-heading">Player 1</h2>
-            <h2 id="p2-heading">Player 2</h2>
+            <h2 class="setup heading p1">Player 1</h2>
+            <h2 class="setup heading p2">Player 2</h2>
             <p>Name</p>
             <input id="p1-name" type="text">
             <p>Name</p>
@@ -22,23 +22,23 @@
             <p>Marker</p>
             <input id="p2-marker" type="text" value="O">
         </div>
-        <button class="setup" type="button">Start</button>
+        <button class="setup start" type="button">Start</button>
     </div>
     <div class="play page">
-        <div class="play players">
-            <h2 class="play">Player 1:</h2><h2 class="play">Player 2:</h2>
-        </div>
+        <h2 id="p1-heading" class="play"></h2>
+        <h2 id="p2-heading" class="play"></h2>
         <div class="play area">
-            <div class="play cell" data-position="0"></div>
-            <div class="play cell" data-position="1"></div>
-            <div class="play cell" data-position="2"></div>
-            <div class="play cell" data-position="3"></div>
-            <div class="play cell" data-position="4"></div>
-            <div class="play cell" data-position="5"></div>
-            <div class="play cell" data-position="6"></div>
-            <div class="play cell" data-position="7"></div>
-            <div class="play cell" data-position="8"></div>
+            <div class="play cell"><p class="play cell text" data-position="0">o</p></div>
+            <div class="play cell"><p class="play cell text" data-position="1">x</p></div>
+            <div class="play cell"><p class="play cell text" data-position="2"></p></div>
+            <div class="play cell"><p class="play cell text" data-position="3"></p></div>
+            <div class="play cell"><p class="play cell text" data-position="4"></p></div>
+            <div class="play cell"><p class="play cell text" data-position="5"></p></div>
+            <div class="play cell"><p class="play cell text" data-position="6"></p></div>
+            <div class="play cell"><p class="play cell text" data-position="7"></p></div>
+            <div class="play cell"><p class="play cell text" data-position="8"></p></div>
         </div>
+        <button class="play reset" type="button">Reset</button>
     </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
